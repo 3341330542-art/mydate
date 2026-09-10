@@ -1,0 +1,34 @@
+{
+  "name": "couple-date-space",
+  "version": "1.0.0",
+  "private": true,
+  "description": "只属于两个人的情侣约会空间 —— 记录、规划并完成我们的每一次约会",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:test": "node scripts/db-test.mjs",
+    "logic:test": "node scripts/logic-test.mjs",
+    "render:test": "node scripts/render-test.mjs",
+    "test": "npm run typecheck && npm run logic:test && npm run db:test && npm run render:test",
+    "qr": "node scripts/qr.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0",
+    "next": "16.3.4",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.10.2",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}
